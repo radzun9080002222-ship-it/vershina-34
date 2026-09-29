@@ -23,7 +23,7 @@
 - Telegram: https://t.me/vershina_cleaning
 - MAX: https://max.ru/u/f9LHodD0cOKZEJQUwiiemzvhecZLDTq6jxMPZ2SmNnd5JdJWltsbNUafP4o
 - Для Волгограда используются отдельные Метрика, Вебмастер и рекламный кабинет. Чужие счётчики и verification-файлы не переносить.
-- Яндекс Вебмастер: сайт `https://vershina-34.ru/`, подтверждение через meta-тег `2aebf29669429761`; после выкладки отправить `https://vershina-34.ru/sitemap.xml` и главную страницу на переобход.
+- Яндекс Вебмастер: сайт `https://vershina-34.ru/` подтверждён 29.09.2026 через meta-тег `2aebf29669429761`; `https://vershina-34.ru/sitemap.xml` принят в очередь, главная страница отправлена на переобход.
 - Счётчик Яндекс.Метрики: `113181548` (`Вершина — клининг Волгоград (vershina-34.ru)`), Вебвизор включён. Цели: `click_phone`, `click_whatsapp`, `click_telegram`, `click_max`.
 - Yandex Cloud: каталог `b1go4d6d7lv85ghbmrn9`; бакеты `vershina-34.ru` и `www.vershina-34.ru`; DNS-зона `dns7udmel90lglitsu2d`; сертификат `fpqkutja2p69091fm873`; сервисный аккаунт `vershina-34-deployer` (`aje2mh5747sulcfi0at5`, роль `storage.editor`). Секреты хранятся только в GitHub Actions Secrets.
 
@@ -50,6 +50,6 @@
 - Workflow `.github/workflows/deploy-yandex-cloud.yml` собирает проект и синхронизирует `dist/` с бакетом `vershina-34.ru`.
 - Для автоматизации использовать отдельный сервисный аккаунт с минимальной ролью `storage.editor`; ключи хранить только в GitHub Actions Secrets.
 - DNS: Yandex Cloud DNS, apex через ANAME на `vershina-34.ru.website.yandexcloud.net.`, `www` через CNAME на технический бакет, CAA разрешает `letsencrypt.org`.
-- HTTPS: бесплатный управляемый сертификат Certificate Manager для `vershina-34.ru` и `www.vershina-34.ru`, подключённый к обоим бакетам.
+- HTTPS: бесплатный управляемый сертификат Certificate Manager `fpqkutja2p69091fm873` выпущен 29.09.2026 для `vershina-34.ru` и `www.vershina-34.ru` и подключён к обоим бакетам.
 - `www` перенаправляется на `https://vershina-34.ru` с сохранением пути.
 - Разрешение пользователя: расходы в Yandex Cloud до 100 ₽ можно выполнять без отдельного подтверждения. Подтверждения интерфейса и безопасности для удаления и постоянных ключей всё равно запрашивать непосредственно перед действием.
