@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vershina-34.ru/sitemap.xml
